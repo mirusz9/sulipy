@@ -1,0 +1,5 @@
+4 25 33 idoelteres 1
+4 55 33 koordinata-elteres 1
+5 5 33 idoelteres 1
+6 22 42 idoelteres 2
+6 32 42 koordinata-elteres 2
