@@ -1,9 +1,8 @@
 # Feladat 1.
 filename = input("Adja meg a bemeneti fájl nevét! ")
-# filename = "konnyu.txt"
+filename = "konnyu.txt"
 sor = int(input("Adja meg egy sor számát! "))
 oszlop = int(input("Adja meg egy oszlop számát! "))
-
 
 # Feladat 2.
 sudoku = []
@@ -22,7 +21,6 @@ with open(
     for line in file:
         digits = list(map(int, line.strip().split(" ")))
         lepesek.append(digits)
-
 
 # Feladat 3.
 
@@ -57,7 +55,6 @@ szazalek = 100 * kitoltetlenek_szama / 81
 print(f"Az üres helyek aránya: {round(szazalek, 2)}%")
 
 # Feladat 5.
-
 for lepes in lepesek:
     szam, sor, oszlop = lepes
     print(f"A kiválasztott sor: {sor} oszlop: {oszlop} a szám: {szam}")
@@ -83,10 +80,8 @@ for lepes in lepesek:
         print("Az adott oszlopban már szerepel a szám")
         continue
 
-    # Resztablazat
-    resz = resztablazat(sor, oszlop)
-    resz_sor = ((resz - 1) // 3) * 3
-    resz_oszlop = ((resz - 1) % 3) * 3
+    resz_sor = ((sor - 1) // 3) * 3
+    resz_oszlop = ((oszlop - 1) // 3) * 3
 
     letezik_mar = False
 
