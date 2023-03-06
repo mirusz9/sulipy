@@ -8,6 +8,7 @@ oszlop = int(input("Adja meg egy oszlop számát! "))
 sudoku = []
 lepesek = []
 
+
 with open(
     "C:\\Users\\User\\Documents\\Coding-Projects\\erettsegi-feladatok\\sudoku\\"
     + filename,
