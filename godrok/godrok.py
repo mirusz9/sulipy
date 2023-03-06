@@ -43,6 +43,25 @@ for melyseg in melysegek:
     elozo = melyseg
 
 
+# Szamold ki hogy hanyadik godor
+# megadott_tav_a_godorben = False
+# for i in range(len(melysegek)):
+#     melyseg = melysegek[i]
+#     if i == tavolsag:
+#         megadott_tav_a_godorben = True
+
+#     if melyseg != 0:
+#         godor.append(melyseg)
+#     elif elozo != 0:
+#         godrok.append(godor)
+#         if megadott_tav_a_godorben:
+#             print(f"A megadott érték a(z) {len(godrok)} gödörben van.")
+#         megadott_tav_a_godorben = False
+#         godor = []
+
+#     elozo = melyseg
+
+
 with open("./godrok.txt", "w") as file:
     file.write("")
 
@@ -114,7 +133,6 @@ else:
     for i in range(kezdopont, vegpont + 1):
         melyseg = melysegek[i]
         terfogat += melyseg
-
 
     print(f"d)\nA térfogata {terfogat * 10} m^3.")
 
