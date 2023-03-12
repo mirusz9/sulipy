@@ -77,7 +77,7 @@ for sor in range(1, sorok - 1):
             # Mind a 4 valtozo True vagy False attol fuggoen hogy a parthoz tartozik vagy nem
             fel = melysegek[sor - 1][oszlop] == 0
             le = melysegek[sor + 1][oszlop] == 0
-            balra = melysegek[sor][oszlop - 1] == 0
+            balra  = melysegek[sor][oszlop - 1] == 0
             jobbra = melysegek[sor][oszlop + 1] == 0
 
             parthossz += int(fel) + int(le) + int(balra) + int(jobbra)
